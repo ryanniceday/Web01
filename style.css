@@ -1,0 +1,121 @@
+/* 全域設定 */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Microsoft JhengHei",sans-serif;
+    background:#eef3f8;
+    padding:40px;
+}
+
+/* 主卡片 */
+
+.card{
+    max-width:800px;
+    margin:auto;
+    background:#ffffff;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    overflow:hidden;
+}
+
+/* 個人資料 */
+
+.profile{
+    background:#004a7c;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.profile img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.profile h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.job{
+    font-size:18px;
+}
+
+/* 內容 */
+
+section{
+    padding:30px;
+    border-bottom:1px solid #dddddd;
+}
+
+section h2{
+    color:#004a7c;
+    margin-bottom:15px;
+}
+
+section p{
+    line-height:1.8;
+    color:#555555;
+}
+
+/* 技能 */
+
+.skill-list{
+    display:flex;
+    flex-wrap:wrap;
+    list-style:none;
+    gap:10px;
+}
+
+.skill-list li{
+    background:#004a7c;
+    color:white;
+    padding:10px 15px;
+    border-radius:20px;
+}
+
+/* 聯絡資訊 */
+
+.contact p{
+    margin-bottom:10px;
+}
+
+/* 頁尾 */
+
+footer{
+    background:#004a7c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* 手機版 */
+
+@media screen and (max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .profile h1{
+        font-size:30px;
+    }
+
+    .job{
+        font-size:16px;
+    }
+
+    .skill-list{
+        flex-direction:column;
+    }
+
+}
